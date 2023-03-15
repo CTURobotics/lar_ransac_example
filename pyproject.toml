@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name = "lar_ransac_example"
+dynamic = ["version"]
+license = { text = "BSD-3-Clause" }
+authors = [
+    { name = "Vladimir Petrik", email = "vladimir.petrik@cvut.cz" },
+]
+description = "Example of Ransac algorithm."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["numpy", "matplotlib", "scipy"]
+classifiers = []
+
+[project.urls]
+
+[project.optional-dependencies]
+
+[tool.black]
+target-version = ['py37']
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ['E203']
+per-file-ignores = [
+    '__init__.py:F401',
+]
+
