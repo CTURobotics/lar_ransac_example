@@ -6,7 +6,7 @@
 #
 import numpy as np
 import matplotlib.pyplot as plt
-from examples.model_line import ModelLine
+from model_line import ModelLine
 
 ref_model = ModelLine(1, 0)
 

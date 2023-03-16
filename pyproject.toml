@@ -11,7 +11,7 @@ license = { text = "BSD-3-Clause" }
 authors = [
     { name = "Vladimir Petrik", email = "vladimir.petrik@cvut.cz" },
 ]
-description = "Example of Ransac algorithm."
+description = "Example of Ransac algorithm for laboratory of robotics course."
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = ["numpy", "matplotlib", "scipy"]
@@ -20,6 +20,13 @@ classifiers = []
 [project.urls]
 
 [project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "flake8",
+    "flake8-pyproject",
+    "black",
+]
 
 [tool.black]
 target-version = ['py37']
@@ -30,4 +37,3 @@ extend-ignore = ['E203']
 per-file-ignores = [
     '__init__.py:F401',
 ]
-

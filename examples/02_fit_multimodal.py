@@ -7,7 +7,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from examples.model_line import ModelLine
+from model_line import ModelLine
 
 ref_model1 = ModelLine(1, 0)
 ref_model2 = ModelLine(-1, 0.5)
